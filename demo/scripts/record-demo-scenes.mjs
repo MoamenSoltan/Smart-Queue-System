@@ -82,10 +82,10 @@ async function runRecording() {
   await takeTicketBtn.click();
   await patientPage.waitForTimeout(1000);
 
-  // Type Customer Name: "Shawky Ahmad"
+  // Type Customer Name: "Alexander Wright"
   const nameInput = patientPage.locator("#customerName");
   if (await nameInput.isVisible()) {
-    await nameInput.fill("Shawky Ahmad");
+    await nameInput.fill("Alexander Wright");
     await patientPage.waitForTimeout(800);
   }
 

@@ -12,8 +12,25 @@
 
 ---
 
-## 🚀 Demo 
-[Watch the Features Walkthrough](https://www.linkedin.com/feed/update/urn:li:activity:7458590040777031681/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1aXNUB2CqA0P8kKo76E-AOA7XuLXK67Pw)
+## 🎬 Official Product Demo & Video Walkthrough
+
+Watch the platform in action with our comprehensive 1080p video demonstrations:
+
+* 🎥 **Full Platform Walkthrough (1m 41s):** [`demo-output/video/Smart-Queue-System-Full-Demo.mp4`](demo-output/video/Smart-Queue-System-Full-Demo.mp4)  
+  *Complete end-to-end journey: Patient discovery, virtual ticketing, sub-50ms Socket.IO call alert, reception desk console, waiting room digital signage, bilingual SmartBot AI, and admin analytics.*
+* ⚡ **Fast-Paced Recruiter Cut (1m 15s):** [`demo-output/video/Smart-Queue-System-CV-Demo.mp4`](demo-output/video/Smart-Queue-System-CV-Demo.mp4)  
+  *High-tempo highlight reel demonstrating core user flows and real-time synchronization.*
+* 🔗 **Online Walkthrough:** [Watch on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7458590040777031681/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1aXNUB2CqA0P8kKo76E-AOA7XuLXK67Pw)
+
+### 📸 Application Views at a Glance
+
+| Patient Discovery & QR Pass | Live Socket.IO Tracker ("YOUR TURN") |
+| :---: | :---: |
+| ![Virtual Ticket](demo-output/screenshots/03_patient_virtual_ticket.png) | ![Live Tracker](demo-output/screenshots/04_patient_live_tracker_your_turn.png) |
+| **Reception Counter Console** | **Public Waiting Room Signage** |
+| ![Reception Console](demo-output/screenshots/05_reception_counter_console.png) | ![Digital Signage](demo-output/screenshots/06_waiting_room_digital_signage.png) |
+| **SmartBot Bilingual AI Assistant** | **30-Day Clinic Analytics** |
+| ![SmartBot AI](demo-output/screenshots/07_smartbot_bilingual_ai.png) | ![Admin Analytics](demo-output/screenshots/08_admin_analytics_dashboard.png) |
 
 ---
 

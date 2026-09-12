@@ -182,7 +182,7 @@ const introHtml = `<!DOCTYPE html>
   <div class="container">
     <div class="top-badge">
       <div class="pulse-dot"></div>
-      Production-Ready Engineering Showcase
+      Official Product Demonstration
     </div>
 
     <h1 class="main-title">
@@ -195,20 +195,24 @@ const introHtml = `<!DOCTYPE html>
 
     <div class="attribution-card">
       <div class="attr-item">
-        <span class="attr-label">Project Scope</span>
-        <span class="attr-value">Team Project</span>
-      </div>
-      <div class="divider"></div>
-      <div class="attr-item">
-        <span class="attr-label">Personal Contribution</span>
+        <span class="attr-label">Patient Experience</span>
         <span class="attr-value highlight">
-          Patient Queue Flow &mdash; Shawky Ahmad
+          Virtual QR Tickets &bull; Live Tracker
         </span>
       </div>
       <div class="divider"></div>
       <div class="attr-item">
-        <span class="attr-label">Core Capabilities</span>
-        <span class="attr-value">Discovery &bull; QR Ticket &bull; Live Tracker &bull; Socket.IO</span>
+        <span class="attr-label">Counter Operations</span>
+        <span class="attr-value">
+          Real-Time Desk &bull; Digital Signage
+        </span>
+      </div>
+      <div class="divider"></div>
+      <div class="attr-item">
+        <span class="attr-label">Clinic Intelligence</span>
+        <span class="attr-value">
+          SmartBot AI (EN/AR) &bull; Analytics
+        </span>
       </div>
     </div>
 
@@ -217,7 +221,7 @@ const introHtml = `<!DOCTYPE html>
       <div class="tech-pill">Node.js / Express</div>
       <div class="tech-pill">MongoDB</div>
       <div class="tech-pill">Socket.IO (< 50ms)</div>
-      <div class="tech-pill">AI Function Calling</div>
+      <div class="tech-pill">Chart.js Analytics</div>
     </div>
   </div>
 </body>
@@ -368,14 +372,14 @@ const outroHtml = `<!DOCTYPE html>
 
     <div class="cards-grid">
       <div class="card primary-highlight">
-        <span class="card-badge">Personal Contribution</span>
-        <h3>Patient Queue Flow</h3>
-        <p>Clinic discovery, doctor queue selection, virtual ticket generation, live position tracking, and real-time Socket.IO call alerts.<br><strong>Shawky Ahmad</strong></p>
+        <span class="card-badge">Patient Flow</span>
+        <h3>Virtual Ticketing & Tracker</h3>
+        <p>Clinic discovery, doctor queue selection, instant QR ticket generation, live position tracking, and automated real-time "YOUR TURN" push alerts.</p>
       </div>
 
       <div class="card">
-        <span class="card-badge">Operations</span>
-        <h3>Reception Console & Public Board</h3>
+        <span class="card-badge">Desk Operations</span>
+        <h3>Reception Console & Signage</h3>
         <p>Real-time queue desk controls with "Call Next", "Mark Done", and audio-enabled multi-counter waiting room public display boards.</p>
       </div>
 
@@ -388,10 +392,10 @@ const outroHtml = `<!DOCTYPE html>
 
     <div class="footer-box">
       <div class="f-left">
-        <div class="f-title">Smart Queue System &bull; Team Full-Stack Healthcare Platform</div>
-        <div class="f-desc">Personal Contribution: Patient Queue Flow (Shawky Ahmad) &bull; Angular 21, Node.js, Express, MongoDB, Socket.IO</div>
+        <div class="f-title">Smart Queue System &bull; Real-Time Healthcare Queue Platform</div>
+        <div class="f-desc">Full-Stack Architecture: Angular 21, Node.js, Express, MongoDB, Socket.IO, Chart.js</div>
       </div>
-      <div class="f-badge">100% Deterministic Local Verification</div>
+      <div class="f-badge">Open Source Platform Demo</div>
     </div>
   </div>
 </body>
@@ -467,7 +471,7 @@ function getLowerThirdHtml(category, headline, subtext) {
 <body>
   <div class="banner">
     <div class="category-row">
-      <span class="badge ${category.includes('Shawky Ahmad') ? 'mine' : ''}">${category}</span>
+      <span class="badge">${category}</span>
     </div>
     <div class="headline">${headline}</div>
     <div class="subtext">${subtext}</div>
@@ -479,43 +483,43 @@ function getLowerThirdHtml(category, headline, subtext) {
 const lowerThirds = [
   {
     id: "lt1_patient_discovery",
-    category: "My Contribution &bull; Shawky Ahmad",
-    headline: "Patient Queue Flow &mdash; Clinic Discovery & Search",
+    category: "Patient Experience",
+    headline: "Clinic Discovery & Specialized Doctor Queues",
     subtext: "Instant multi-clinic discovery, specialized doctor queue schedules, and live wait time estimates."
   },
   {
     id: "lt2_patient_ticket",
-    category: "My Contribution &bull; Shawky Ahmad",
+    category: "Patient Experience",
     headline: "Virtual Ticket Generation & Dynamic QR Pass",
     subtext: "Paperless queue booking with instant numeric ticket generation, QR validation, and direct tracker access."
   },
   {
     id: "lt3_live_sync",
-    category: "My Contribution &bull; Shawky Ahmad",
+    category: "Real-Time Synchronization",
     headline: "Live Position Tracking & Socket.IO 'YOUR TURN' Alert",
     subtext: "Bi-directional WebSocket sync automatically updates position count and triggers instant turn notification (<50ms)."
   },
   {
     id: "lt4_reception_desk",
-    category: "Reception Desk Control",
+    category: "Reception Operations",
     headline: "Counter Queue Console & Multi-Action Controls",
     subtext: "Desk operator manages active queues, calls next patient, marks visits complete, and manages waitlists."
   },
   {
     id: "lt5_public_display",
-    category: "Waiting Room Experience",
+    category: "Digital Signage",
     headline: "Live Multi-Counter Public Display Board",
     subtext: "Digital signage display with real-time room routing and audio bell chimes for called patients."
   },
   {
     id: "lt6_smartbot",
-    category: "AI Patient Assistant",
+    category: "AI Healthcare Assistant",
     headline: "SmartBot AI &mdash; Bilingual Function-Calling Queue Inquiries",
     subtext: "Natural language queue status, remaining wait time, and clinic lookup in English and Arabic."
   },
   {
     id: "lt7_admin_analytics",
-    category: "Platform Administration",
+    category: "Enterprise Administration",
     headline: "Clinic Operations, Historical Analytics & Credit Billing",
     subtext: "Comprehensive queue configuration, staff access control, 30-day analytics charts, and activity audit logs."
   }
