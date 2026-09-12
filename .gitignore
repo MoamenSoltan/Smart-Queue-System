@@ -143,6 +143,6 @@ vite.config.ts.timestamp-*
 .vite/
 
 
-scripts
+/scripts
 
 uploads

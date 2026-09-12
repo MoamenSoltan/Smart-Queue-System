@@ -286,11 +286,60 @@ const callWithRetry = async (body, maxRetries = 3) => {
   }
 };
 
+const demoFallbackChat = async (message, history = []) => {
+  const isArabic = /[\u0600-\u06FF]/.test(message);
+  const numberMatch = message.match(/#?(\d+)/);
+  const ticketNumber = numberMatch ? parseInt(numberMatch[1], 10) : null;
+
+  if (ticketNumber) {
+    const info = await toolExecutors.get_ticket_by_number({ ticketNumber });
+    if (info.error) {
+      const errReply = isArabic
+        ? `عفواً، لا توجد تذكرة نشطة بالرقم #${ticketNumber}. قد تكون اكتملت أو ألغيت.`
+        : `Sorry, no active ticket was found with number #${ticketNumber}. It may have been completed or cancelled.`;
+      return {
+        reply: errReply,
+        history: [...history, { role: "user", content: message }, { role: "assistant", content: errReply }]
+      };
+    }
+
+    const reply = isArabic
+      ? `تذكرتك رقم #${info.ticketNumber} في عيادة ${info.queueName || "العيادة"}.\nموقعك الحالي في الانتظار: رقم ${info.position}، ووقت الانتظار المتوقع حوالي ${info.estimatedWaitTimeMinutes} دقيقة.`
+      : `Ticket #${info.ticketNumber} for ${info.queueName || "the clinic"}.\nYour current position is #${info.position} with an estimated waiting time of ~${info.estimatedWaitTimeMinutes} minutes. Please stay nearby until called.`;
+
+    return {
+      reply,
+      history: [...history, { role: "user", content: message }, { role: "assistant", content: reply }]
+    };
+  }
+
+  if (/clinic|عيادة|عيادات/i.test(message)) {
+    const clinics = await toolExecutors.get_all_clinics();
+    const clinicNames = clinics.map(c => `${c.name} (${c.activeQueues} active queues)`).join(", ");
+    const reply = isArabic
+      ? `العيادات المتاحة حالياً تشمل: ${clinics.map(c => c.name).join("، ")}. يمكنك حجز تذكرتك مباشرة من الموقع.`
+      : `Our currently available clinics include: ${clinicNames}. You can join a queue directly from the clinics page!`;
+    return {
+      reply,
+      history: [...history, { role: "user", content: message }, { role: "assistant", content: reply }]
+    };
+  }
+
+  const reply = isArabic
+    ? `مرحباً بك في SmartBot! أنا هنا لمساعدتك في معرفة دورك في قائمة الانتظار، ووقت الانتظار المتوقع، وتفاصيل العيادات. كيف يمكنني مساعدتك اليوم؟`
+    : `Hello! I am SmartBot, your clinic assistant. I can check your queue position, estimated wait time, or help you find available clinics. How can I help you today?`;
+
+  return {
+    reply,
+    history: [...history, { role: "user", content: message }, { role: "assistant", content: reply }]
+  };
+};
+
 // ─── Main Chat Function ────────────────────────────────────────────
 export const chat = async ({ message, history = [] }) => {
   const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
-    throw new AppError("Groq API key is not configured.", 500);
+    return await demoFallbackChat(message, history);
   }
 
   // Trim history to avoid token overflow

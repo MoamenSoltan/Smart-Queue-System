@@ -1,4 +1,4 @@
 export const environment = {
-    production: true,
-    apiUrl: 'https://smart-queue-system-production.up.railway.app/api/v1'
-  };
+  production: true,
+  apiUrl: 'http://localhost:3000/api/v1'
+};
