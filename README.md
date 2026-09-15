@@ -9,6 +9,9 @@
 [![Groq AI](https://img.shields.io/badge/Groq-AI%20Chatbot-F55036?style=for-the-badge&logoColor=white)](https://groq.com/)
 [![Stripe](https://img.shields.io/badge/Stripe-Payments-6772E5?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Google Drive Demo](https://img.shields.io/badge/Google%20Drive-Demo%20Video-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1CGYDF8LWx9LGvTU2tAurm0xVk6mPdlRJ/view?usp=drive_link)
+
+> 🎬 **Featured Video Demo:** [Watch 1080p HD Video on Google Drive](https://drive.google.com/file/d/1CGYDF8LWx9LGvTU2tAurm0xVk6mPdlRJ/view?usp=drive_link) &nbsp;|&nbsp; [Watch on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7458590040777031681/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1aXNUB2CqA0P8kKo76E-AOA7XuLXK67Pw)
 
 ---
 
@@ -16,6 +19,7 @@
 
 Watch the platform in action with our comprehensive 1080p video demonstrations:
 
+* ☁️ **Direct HD Video Stream:** [Watch / Download 1080p Demo on Google Drive](https://drive.google.com/file/d/1CGYDF8LWx9LGvTU2tAurm0xVk6mPdlRJ/view?usp=drive_link)
 * 🎥 **Full Platform Walkthrough (1m 41s):** [`demo-output/video/Smart-Queue-System-Full-Demo.mp4`](demo-output/video/Smart-Queue-System-Full-Demo.mp4)  
   *Complete end-to-end journey: Patient discovery, virtual ticketing, sub-50ms Socket.IO call alert, reception desk console, waiting room digital signage, bilingual SmartBot AI, and admin analytics.*
 * ⚡ **Fast-Paced Recruiter Cut (1m 15s):** [`demo-output/video/Smart-Queue-System-CV-Demo.mp4`](demo-output/video/Smart-Queue-System-CV-Demo.mp4)  

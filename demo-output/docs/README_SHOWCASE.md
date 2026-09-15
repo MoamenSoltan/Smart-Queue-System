@@ -5,6 +5,7 @@
 ---
 
 ## 📺 Official Product Demos
+* ☁️ **Google Drive 1080p Mirror:** [Watch / Download on Google Drive](https://drive.google.com/file/d/1CGYDF8LWx9LGvTU2tAurm0xVk6mPdlRJ/view?usp=drive_link)
 
 ### 1. Full Platform Walkthrough (1080p 60fps / 30fps)
 * **File:** [`demo-output/video/Smart-Queue-System-Full-Demo.mp4`](../video/Smart-Queue-System-Full-Demo.mp4)
